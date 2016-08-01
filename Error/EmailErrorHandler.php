@@ -86,10 +86,10 @@ class EmailErrorHandler extends ErrorHandler {
 /**
  * handleException
  *
- * @param Exception $exception The exception to render.
+ * @param mixed $exception The exception to render.
  * @return void
  */
-	public static function handleException(Exception $exception) {
+	public static function handleException($exception) {
 		extract(self::handlerSettings());
 
 		if ($emailNotifications === true && !empty($receiver)) {
