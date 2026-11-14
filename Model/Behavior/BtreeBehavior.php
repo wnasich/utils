@@ -1021,8 +1021,7 @@ class BtreeBehavior extends ModelBehavior {
 			'recursive' => $recursive)
 		);
 
-		reset($edge_pairs);
-		while(list($lft, $rght) = each($edge_pairs)) {
+		foreach ($edge_pairs as $lft => $rght) {
 			if(!$lft || $lft < $part_lft) {
 				continue;
 			}

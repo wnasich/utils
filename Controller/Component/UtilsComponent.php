@@ -44,7 +44,7 @@ class UtilsComponent extends Object {
  */
 	public function cleanHtml($text, $settings = 'full') {
 		App::import('Helper', 'Utils.Cleaner');
-		$cleaner = & new CleanerHelper();
+		$cleaner = new CleanerHelper();
 		return $cleaner->clean($text, $settings);
 	}
 

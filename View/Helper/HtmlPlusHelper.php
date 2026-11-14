@@ -44,7 +44,7 @@ class HtmlPlusHelper extends AppHelper {
  * @param string $type Script type to return
  * @return string
  */
-	protected function _getScriptType($scripts = null, $type) {
+	protected function _getScriptType($scripts, $type) {
 		$scripts = explode("\n\t", $scripts);
 		$result = array();
 		foreach ($scripts as $s) {
